@@ -1,14 +1,14 @@
-fetch("affirmation.json");
-then((response) => response.json);
-then((data) => {
-  const affirmations = data.affirmations;
-  console.log(data);
+fetch("affirmation.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    const affirmations = data.affirmations;
 
-  const today = new Date();
-  const day = today.getDate();
+    const index = Math.floor(Math.random() * affirmations.length);
 
-  const index = Math.floor(Math.random() * affirmations.length);
-  const dailyAffirmation = affirmations[index];
-
-  document.getElementById("affirmation").textContent = dailyAffirmation;
-});
+    document.getElementById("affirmation").textContent = affirmations[index];
+  })
+  .catch((error) => {
+    console.error("Something went wrong:", error);
+  });
