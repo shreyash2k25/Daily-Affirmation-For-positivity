@@ -1,0 +1,40 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: linear-gradient(to right, #003d63, #0265ce);
+  color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page {
+  background-color: #072d7d;
+  max-width: 600px;
+  width: 90%;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(3, 29, 124, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.page:hover {
+  transform: scale(1.02);
+}
+
+#affirmation {
+  font-family: "Georgia", serif;
+  font-size: 26px;
+  background-color: #101a63;
+  color: #fbf7f7;
+  padding: 25px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  line-height: 1.6;
+  margin-top: 20px;
+}
