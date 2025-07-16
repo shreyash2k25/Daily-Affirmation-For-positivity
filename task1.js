@@ -3,7 +3,7 @@ fetch("affirmation.json")
   .then((data) => {
     affirmations = data.affirmations;
     showRandomAffirmation();
-    setInterval(showRandomAffirmation, 10000); // for testing 10 second
+    setInterval(showRandomAffirmation, 60000); // for testing 10 second
   })
   .catch((error) => {
     console.error("Something went wrong:", error);
